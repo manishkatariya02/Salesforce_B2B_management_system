@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>amount_validation</fullName>
+    <active>true</active>
+    <description>This will validate that the order amount must be grearter than 0</description>
+    <errorConditionFormula>Total_Amount__c  &lt;= 0</errorConditionFormula>
+    <errorDisplayField>Total_Amount__c</errorDisplayField>
+    <errorMessage>Please enter tha valid bill amount</errorMessage>
+</ValidationRule>

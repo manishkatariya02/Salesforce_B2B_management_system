@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>delivery_date_validation</fullName>
+    <active>true</active>
+    <description>This will validate that the delivery date cannot be before than order date</description>
+    <errorConditionFormula>Delivery_Date__c  &lt;  Order_Date__c</errorConditionFormula>
+    <errorMessage>Please enter the valid delivery date</errorMessage>
+</ValidationRule>

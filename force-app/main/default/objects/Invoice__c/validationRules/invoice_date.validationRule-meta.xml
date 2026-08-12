@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>invoice_date</fullName>
+    <active>true</active>
+    <description>this will validate the invoice date should be in past or present date, not in future</description>
+    <errorConditionFormula>Invoice_Date__c  &gt;  TODAY()</errorConditionFormula>
+    <errorDisplayField>Invoice_Date__c</errorDisplayField>
+    <errorMessage>Please enter the valid date</errorMessage>
+</ValidationRule>

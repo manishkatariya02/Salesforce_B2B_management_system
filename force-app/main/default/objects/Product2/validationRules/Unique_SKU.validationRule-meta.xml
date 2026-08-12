@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique_SKU</fullName>
+    <active>true</active>
+    <description>This will validate if a user is entering invalid amount to every product</description>
+    <errorConditionFormula>Cost_price__c   &lt;= 1   &amp;&amp;  Selling_Price__c  &lt;= 1</errorConditionFormula>
+    <errorMessage>Price can not be 0, Enter valid price</errorMessage>
+</ValidationRule>

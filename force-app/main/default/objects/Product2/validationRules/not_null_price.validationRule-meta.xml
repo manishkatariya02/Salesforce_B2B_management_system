@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>not_null_price</fullName>
+    <active>true</active>
+    <description>this validation rule will verify weather the user has entered proper amount or not</description>
+    <errorConditionFormula>ISBLANK( Cost_price__c )  &amp;&amp;     ISBLANK( Selling_Price__c )</errorConditionFormula>
+    <errorMessage>Please enter the proper value in cost price or selling price</errorMessage>
+</ValidationRule>
